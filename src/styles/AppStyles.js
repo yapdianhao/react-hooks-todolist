@@ -1,6 +1,17 @@
 import { makeStyles } from '@material-ui/core/styles';
+import sizes from '../helpers/sizes';
 
 export default makeStyles ({
+    App: {
+        width: '50%',
+        margin: '0 auto',
+        [sizes.down('md')]: {
+            width: '70%'
+        },
+        [sizes.down('xs')]: {
+            width: '90%'
+        }
+    },
     header: {
         textAlign: 'center',
         '& h1': {
@@ -14,7 +25,7 @@ export default makeStyles ({
         },
         '& h2': {
             color: '#9aa1a5',
-            fontSize: '0.75rem',
+            fontSize: '1rem',
             fontWeight: '300'
         }
     }
