@@ -1,5 +1,6 @@
 import React from 'react';
 import useStyles from '../styles/AppStyles';
+import TodoApp from '../components/TodoApp';
 
 function App() {
     const classes = useStyles();
@@ -14,6 +15,7 @@ function App() {
                     A todo list app built with React Hooks and Context
                 </h2>
             </header>
+            <TodoApp />
         </div>
     );
 }
